@@ -1,0 +1,40 @@
+title: Brute Force Authentication Detection
+
+id: 22222222-2222-2222-2222-222222222222
+
+status: experimental
+
+description: Detects repeated failed authentication attempts that may indicate brute force or password spraying activity.
+
+references:
+  - https://attack.mitre.org/techniques/T1110/
+
+author: Vikash Choudhary
+
+date: 2026/05/20
+
+logsource:
+  product: windows
+  service: security
+
+detection:
+  selection:
+    EventID: 4625
+
+  timeframe: 5m
+
+  condition: selection
+
+falsepositives:
+  - User mistyped password
+  - Expired credentials
+  - VPN authentication issues
+  - Misconfigured scheduled tasks
+  - Incorrect saved passwords
+
+level: high
+
+tags:
+  - attack.credential_access
+  - attack.t1110
+  - attack.brute_force
