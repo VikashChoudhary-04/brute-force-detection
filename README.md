@@ -177,3 +177,35 @@ Potential enhancements include:
 ## Project Status
 
 - Active SOC detection engineering learning project focused on authentication threat detection and brute force monitoring.
+
+---
+
+## Screenshots
+
+### Failed Login Detection
+
+![Failed Login Detection](screenshots/failed_login_detection.png)
+
+---
+
+### Failed Login Timeline
+
+![Failed Login Timeline](screenshots/failed_login_timeline.png)
+
+---
+
+### Successful Login Correlation
+
+![Successful Login Correlation](screenshots/successful_login_correlation.png)
+
+---
+
+### Privileged Logon Monitoring
+
+![Privileged Logon Monitoring](screenshots/privileged_logon_monitoring.png)
+
+---
+
+### Suspicious Process Hunting
+
+![Suspicious Process Hunt](screenshots/suspicious_process_hunt.png)
